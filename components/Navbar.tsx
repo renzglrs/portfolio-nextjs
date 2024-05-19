@@ -42,7 +42,7 @@ const Navbar = () => {
                         <NavigationMenuItem key={link.href}>
                             <Link href={link.href} legacyBehavior passHref>
                                 {/* To fix: text color theme-- */}
-                                <NavigationMenuLink className="text-sm text-gray-600 hover:text-gray-800">
+                                <NavigationMenuLink className="text-sm text-gray-600 hover:text-gray-800 dark:text-white">
                                     {link.label}
                                 </NavigationMenuLink>
                             </Link>
