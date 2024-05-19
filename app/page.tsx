@@ -4,18 +4,18 @@ import SkillsSection from "@/components/SkillsSection";
 
 export default function HomePage() {
   return (
-    <section className="flex flex-col gap-10">
-      {/* Hero Component */}
-      <HeroSection />
+    <main className="container max-w-[700px] flex flex-col gap-10 pt-10 pb-40 max-md:pt-6">
+        {/* Hero Component */}
+        <HeroSection />
 
-      {/* Skills Component */}
-      <SkillsSection />
+        {/* Skills Component */}
+        <SkillsSection />
 
-      {/* Projects Component */}
+        {/* Projects Component */}
 
-      {/* Contact me Component */}
-      <ContactSection />
-    </section>
+        {/* Contact me Component */}
+        <ContactSection />
+    </main>
   )
 }
 

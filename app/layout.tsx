@@ -31,9 +31,7 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <Navbar />
-            <main className="container max-w-[700px] pt-10 pb-40 justify-between max-md:pt-6">
               {children}
-            </main>
           </ThemeProvider>
       </body>
     </html>
