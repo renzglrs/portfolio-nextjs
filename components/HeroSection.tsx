@@ -14,7 +14,7 @@ const HeroSection = () => {
         </div>
 
         <h1 className="text-3xl font-bold">Renz Glorioso</h1>
-        <p className="max-w-md text-gray-600 text-base font-light">
+        <p className="max-w-md text-gray-800 text-base font-light dark:text-gray-300">
           {headerDetails.intro}
           <code className={headerDetails.className}>
             {headerDetails.codeText}

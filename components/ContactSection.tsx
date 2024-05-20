@@ -16,18 +16,19 @@ const ContactSection = () => {
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
             {contactList.map((contact) => (
                 <Link key={contact.imgUrl} href={contact.link} >
-                  <div className="w-full flex items-center justify-between p-3 border-none rounded-lg bg-gray-50">
+                  <div className="w-full flex items-center justify-between p-3 border-none rounded-lg bg-gray-50 dark:bg-gray-800 dark:text-gray-300">
                       <div className="flex gap-4 items-center">
                         <Image 
                             src={contact.imgUrl}
                             alt="avatar" 
                             width={32}
                             height={32}
+                            className="dark: fill-gray-300"
                         />
                         <p>{contact.label}</p>
                       </div>
                       <div>
-                        <ArrowUpRight />
+                        <ArrowUpRight className="text-gray-900 dark:text-gray-300" />
                       </div>
                   </div>
                 </Link>
