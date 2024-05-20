@@ -4,7 +4,7 @@ import SkillsSection from "@/components/SkillsSection";
 
 export default function HomePage() {
   return (
-    <main className="container max-w-[700px] flex flex-col gap-10 pt-10 pb-40 max-md:pt-6">
+    <main className="container max-w-[700px] flex flex-col gap-10 pb-40 max-md:pt-6">
         {/* Hero Component */}
         <HeroSection />
 
