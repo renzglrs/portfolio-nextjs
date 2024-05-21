@@ -9,8 +9,8 @@ const SkillsSection = () => {
         <h2 className="text-2xl font-medium pb-4">Skills</h2>
 
         <div className="grid grid-cols-6 gap-4 2">
-            {SkillIcons.map((skill) => (
-                <div className="flex items-start justify-start">
+            {SkillIcons.map((skill, index) => (
+                <div className="flex items-start justify-start" key={index}>
                     {/* <Image 
                         src={skill.imgUrl}
                         alt="avatar" 
