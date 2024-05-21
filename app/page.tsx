@@ -9,13 +9,13 @@ export default function HomePage() {
         {/* Hero Component */}
         <HeroSection />
 
+        {/* Bento Grid */}
+        <BentoGrid />
+
         {/* Skills Component */}
         <SkillsSection />
 
         {/* Projects Component */}
-
-        {/* Bento Grid */}
-        {/* <BentoGrid /> */}
 
         {/* Contact me Component */}
         <ContactSection />
