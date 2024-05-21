@@ -1,4 +1,3 @@
-import { skillsList } from '@/constants';
 import Image from 'next/image';
 import React from 'react'
 import { SkillIcons } from './SkillIcons';
@@ -11,7 +10,7 @@ const SkillsSection = () => {
 
         <div className="grid grid-cols-6 gap-4 2">
             {SkillIcons.map((skill) => (
-                <div className="flex items-start justify-center">
+                <div className="flex items-start justify-start">
                     {/* <Image 
                         src={skill.imgUrl}
                         alt="avatar" 

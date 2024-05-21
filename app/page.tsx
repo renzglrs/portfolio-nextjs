@@ -1,6 +1,7 @@
 import ContactSection from "@/components/ContactSection";
 import HeroSection from "@/components/HeroSection";
 import SkillsSection from "@/components/SkillsSection";
+import BentoGrid from "@/components/bento/BentoGrid";
 
 export default function HomePage() {
   return (
@@ -12,6 +13,9 @@ export default function HomePage() {
         <SkillsSection />
 
         {/* Projects Component */}
+
+        {/* Bento Grid */}
+        {/* <BentoGrid /> */}
 
         {/* Contact me Component */}
         <ContactSection />
