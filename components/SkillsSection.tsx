@@ -10,7 +10,7 @@ const SkillsSection = () => {
 
         <div className="grid grid-cols-6 gap-4 2">
             {SkillIcons.map((skill, index) => (
-                <div className="flex items-start justify-start">
+                <div className="flex items-start justify-start" key={index}>
                     {/* <Image 
                         src={skill.imgUrl}
                         alt="avatar" 
@@ -19,7 +19,7 @@ const SkillsSection = () => {
                         className="dark:fill-slate-50"
                     /> */}
                     {/* <p>{skill.label}</p> */}
-                    <span className="text-5xl" key={index}>{skill.icon}</span>
+                    <span className="text-5xl">{skill.icon}</span>
                 </div>
             ))}
         </div>
