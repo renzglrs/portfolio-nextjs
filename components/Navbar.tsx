@@ -6,20 +6,12 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Link from "next/link";
-
-
 import MobileNav from "./MobileNav";
 import { navLinks } from "@/constants";
 import ThemeSwitcher from "./ThemeSwitcher";
+import Image from "next/image";
 
 
 
@@ -32,7 +24,7 @@ const Navbar = () => {
                 {/* Avatar/Logo */}
                 <Avatar>
                     <Link href="/">
-                        <AvatarImage className="p-1 cursor-pointer" src="/images/RG-logo.svg" />
+                        <AvatarImage className="p-1 cursor-pointer fill-green-200" src="/images/RG-logo.svg" />
                         <AvatarFallback>RG</AvatarFallback>
                     </Link>
                 </Avatar>

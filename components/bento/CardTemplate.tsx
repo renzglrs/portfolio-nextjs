@@ -1,7 +1,6 @@
 import React from 'react'
 import { cn } from "@/lib/utils";
 import { Card } from '../ui/card';
-import Link from 'next/link';
 
 const CardTemplate = ({ 
     children,
@@ -22,9 +21,7 @@ const CardTemplate = ({
             )
         }
     >
-        <Link href="https://github.com/renzglrs" target='_blank'>
-            {children}
-        </Link>
+        {children}
     </Card>
   )
 }
