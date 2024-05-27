@@ -17,19 +17,6 @@ const ThemeSwitcher = () => {
   const { setTheme } = useTheme()
 
   return (
-    // <DropdownMenu>
-    //     <DropdownMenuTrigger>
-    //         <Sun className="text-gray-600 text-sm cursor-pointer hover:text-gray-400" size={18} />
-    //     </DropdownMenuTrigger>
-    //     <DropdownMenuContent>
-    //         {/* <DropdownMenuLabel>My Account</DropdownMenuLabel>
-    //         <DropdownMenuSeparator /> */}
-    //         <DropdownMenuItem>Light</DropdownMenuItem>
-    //         <DropdownMenuItem>Dark</DropdownMenuItem>
-    //         <DropdownMenuItem>Automatic</DropdownMenuItem>
-    //     </DropdownMenuContent>
-    // </DropdownMenu>
-
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="outline" size="icon" className="border-none focus:ring-0 dark:focus:ring-offset-2">

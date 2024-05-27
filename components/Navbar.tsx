@@ -24,7 +24,7 @@ const Navbar = () => {
                 {/* Avatar/Logo */}
                 <Avatar>
                     <Link href="/">
-                        <AvatarImage className="p-1 cursor-pointer fill-green-200" src="/images/RG-logo.svg" />
+                        <AvatarImage className="p-1 cursor-pointer fill-green-200" src="/images/RG.svg" />
                         <AvatarFallback>RG</AvatarFallback>
                     </Link>
                 </Avatar>
