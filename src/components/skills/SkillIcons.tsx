@@ -7,7 +7,7 @@ interface SkillIcon {
   label: string;
   href: string;
   color?: string;
-  icon: React.ReactNode;
+  icon?: React.ReactNode;
 }
 export const SkillIcons: SkillIcon[] = [
     {

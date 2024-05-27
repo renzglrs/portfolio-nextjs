@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import SkillsSection from '@/components/skills/SkillsSection';
+import SkillsSection from '@/src/components/skills/SkillsSection';
 
 //👇 This default export determines where your story goes in the story list
 const meta: Meta<typeof SkillsSection> = {
@@ -16,8 +16,4 @@ const meta: Meta<typeof SkillsSection> = {
 export default meta;
 type Story = StoryObj<typeof SkillsSection>;
 
-export const Primary: Story = {
-  args: {
-    //👇 The args you need here will depend on your component
-  },
-};
+export const Primary: Story = {};

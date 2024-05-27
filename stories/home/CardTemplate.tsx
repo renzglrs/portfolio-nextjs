@@ -1,6 +1,6 @@
 import React from 'react'
 import { cn } from "@/lib/utils";
-import { Card } from '../../components/ui/card';
+import { Card } from '../../src/components/ui/card';
 
 interface CardTemplateProps {
     children: React.ReactNode;
