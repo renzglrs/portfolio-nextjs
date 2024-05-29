@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import SkillsSection from '@/src/components/skills/SkillsSection';
+import SkillsSection from "@/app/home/skills/components/SkillsSection";
 
 //👇 This default export determines where your story goes in the story list
 const meta: Meta<typeof SkillsSection> = {

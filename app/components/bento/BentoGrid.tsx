@@ -45,23 +45,21 @@ const BentoGrid = () => {
             {/* <h2 className="text-2xl font-medium pb-4">Bento Grid Test</h2> */}
             
             {/* Bento Grid example layout 1 */}
-            <div className="grid grid-rows-2 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-10">
+            <ul className="animated-list grid grid-rows-2 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-10">
                 {/* {data.map((item, i) => (
                   <div key={i} className={`${boxStyle} ${i === 0 || i === 3 ? 'md:col-span-2' : ''}`}>
                     <h2 className="text-xl text-gray-600">{item.title}</h2>
                     <p className="font-bold text-2xl">{item.value}</p>
                   </div>
                 ))} */}
-
-                <Github />
-                <Spotify />
-                <Strava />
-                <Nba />
-
+                  <Github /> 
+                  <Spotify />
+                  <Strava />
+                  <Nba />
                 {/* <div className="row-span-1 md:col-span-1 bg-[#1d1d1d] rounded-md p-10 flex flex-col items-center justify-center">
                   <BsGithub className="text-7xl text-white"/>
                 </div> */}
-            </div>
+            </ul>
 
 
 

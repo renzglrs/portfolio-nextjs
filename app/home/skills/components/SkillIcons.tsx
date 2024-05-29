@@ -9,7 +9,7 @@ interface SkillIcon {
   color?: string;
   icon?: React.ReactNode;
 }
-export const SkillIcons: SkillIcon[] = [
+export const SkillIconList: SkillIcon[] = [
     {
         label: "HTML5",
         href: "/",

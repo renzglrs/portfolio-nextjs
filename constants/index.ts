@@ -8,10 +8,10 @@ export const headerDetails = {
 }
 
 export const navLinks = [
-    { label: "About", href: "/about" },
-    { label: "Projects", href: "/projects" },
-    { label: "Playground", href: "/playground"},
-    { label: "Contact", href: "/contact"},
+    { label: "About", route: "/about" },
+    { label: "Projects", route: "/projects" },
+    { label: "Playground", route: "/playground"},
+    { label: "Contact", route: "/contact"},
 ];
 
 export const contactList = [

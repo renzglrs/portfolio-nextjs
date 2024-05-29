@@ -5,7 +5,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/src/components/ui/sheet";
+} from "@/app/components/ui/sheet";
 
 import {
   DropdownMenu,
@@ -14,7 +14,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/src/components/ui/dropdown-menu"
+} from "@/app/components/ui/dropdown-menu"
 
 import { navLinks } from "@/constants";
 import { Menu } from "lucide-react";
@@ -33,8 +33,8 @@ const MobileNav = () => {
                     <SheetDescription>
                         <ul className="flex flex-col gap-4 pt-14">
                         {navLinks.map((link) => (
-                            <li key={link.href} className="cursor-pointer">
-                                <Link href={link.href} legacyBehavior passHref>
+                            <li key={link.route} className="cursor-pointer">
+                                <Link href={link.route} legacyBehavior passHref>
                                     <p className="text-lg text-gray-600 hover:text-gray-800">
                                         {link.label}
                                     </p>

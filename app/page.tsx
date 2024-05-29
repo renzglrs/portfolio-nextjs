@@ -1,7 +1,7 @@
-import ContactSection from "@/src/components/ContactSection";
-import HeroSection from "@/src/components/HeroSection";
-import SkillsSection from "@/src/components/skills/SkillsSection";
-import BentoGrid from "@/src/components/bento/BentoGrid";
+import ContactSection from "./home/contact/ContactSection";
+import HeroSection from "@/app/home/hero/HeroSection";
+import SkillsSection from "@/app/home/skills/components/SkillsSection";
+import BentoGrid from "@/app/components/bento/BentoGrid"
 
 export default function HomePage() {
   return (
