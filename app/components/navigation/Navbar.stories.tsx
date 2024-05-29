@@ -1,10 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import Navbar from './Navbar';
 import { ThemeProvider } from "@/app/components/theme-provider";
-import { navLinks } from "@/constants";
-import {
-  NavigationMenu,
-} from "@/app/components/ui/navigation-menu";
+
 
 
 const meta: Meta<typeof Navbar> = {

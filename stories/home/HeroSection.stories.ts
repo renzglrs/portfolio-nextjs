@@ -4,7 +4,7 @@ import HeroSectionComponent from './HeroSection';
 
 //👇 This default export determines where your story goes in the story list
 const meta: Meta<typeof HeroSectionComponent> = {
-    title: 'Home/HeroSection',
+    title: 'Home/Section/HeroSection',
     component: HeroSectionComponent,
     parameters: {
       layout: "centered",

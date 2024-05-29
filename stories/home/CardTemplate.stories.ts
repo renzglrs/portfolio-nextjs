@@ -10,7 +10,7 @@ import { BsGithub } from "react-icons/bs";
 
 //👇 This default export determines where your story goes in the story list
 const meta: Meta<typeof CardTemplateComponent> = {
-    title: 'Home/CardTemplate',
+    title: 'Home/Component/CardTemplate',
     component: CardTemplateComponent,
     parameters: {
         layout: "centered",
