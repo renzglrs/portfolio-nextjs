@@ -10,7 +10,7 @@ export const headerDetails = {
 export const navLinks = [
     { label: "About", route: "/about" },
     { label: "Projects", route: "/projects" },
-    { label: "Playground", route: "/playground"},
+    { label: "Blog", route: "/blog"},
     { label: "Contact", route: "/contact"},
 ];
 

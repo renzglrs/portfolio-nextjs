@@ -1,17 +1,17 @@
 // import { Secondary } from './../../node_modules/@storybook/react/template/cli/ts-3-8/Button.stories';
-import { ReactNode } from './../../node_modules/@mdx-js/react/lib/index.d';
+import { ReactNode } from '../../../node_modules/@mdx-js/react/lib';
 import { IconType } from 'react-icons/lib';
 import type { Meta, StoryObj } from '@storybook/react';
-import CardTemplateComponent from './CardTemplate';
 import { cn } from '@/lib/utils';
 import { BsGithub } from "react-icons/bs";
+import CardTemplate from './CardTemplate';
 
 
 
 //👇 This default export determines where your story goes in the story list
-const meta: Meta<typeof CardTemplateComponent> = {
+const meta: Meta<typeof CardTemplate> = {
     title: 'Home/Component/CardTemplate',
-    component: CardTemplateComponent,
+    component: CardTemplate,
     parameters: {
         layout: "centered",
         background: "dark",
@@ -20,7 +20,7 @@ const meta: Meta<typeof CardTemplateComponent> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof CardTemplateComponent>;
+type Story = StoryObj<typeof CardTemplate>;
 
 export const Primary: Story = {
     args: {

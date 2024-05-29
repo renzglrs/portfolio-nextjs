@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react'
-import { SkillIconList } from './SkillIcons';
+import { SkillIconList } from './SkillIconList';
 import { cn } from '@/lib/utils';
 import SkillIcon from './SkillIcon';
 

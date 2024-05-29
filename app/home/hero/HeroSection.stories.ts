@@ -1,11 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import HeroSectionComponent from './HeroSection';
-
+import HeroSection from './HeroSection';
 
 //👇 This default export determines where your story goes in the story list
-const meta: Meta<typeof HeroSectionComponent> = {
+const meta: Meta<typeof HeroSection> = {
     title: 'Home/Section/HeroSection',
-    component: HeroSectionComponent,
+    component: HeroSection,
     parameters: {
       layout: "centered",
       backgrounds: {
@@ -17,9 +16,9 @@ const meta: Meta<typeof HeroSectionComponent> = {
 
 export default meta;
 
-type Story = StoryObj<typeof HeroSectionComponent>;
+type Story = StoryObj<typeof HeroSection>;
 
-export const HeroSection: Story = {
+export const Default: Story = {
   // render: () => <HeroSectionComponent />,
 }
 
