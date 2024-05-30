@@ -14,26 +14,5 @@ export const navLinks = [
     { label: "Contact", route: "/contact"},
 ];
 
-export const contactList = [
-    {
-        label: "Github",
-        imgUrl: "/icons/github.svg",
-        link: "#"
-    },
-    {
-        label: "Linkedin",
-        imgUrl: "/icons/linkedin.svg",
-        link: "#"
-    },
-    {
-        label: "Codepen",
-        imgUrl: "/icons/codepen.svg",
-        link: "#"
-    },
-    {
-        label: "Instagram",
-        imgUrl: "/icons/instagram.svg",
-        link: "#"
-    },
-];
+
 

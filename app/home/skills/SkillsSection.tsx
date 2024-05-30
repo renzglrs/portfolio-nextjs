@@ -1,9 +1,6 @@
-import Image from 'next/image';
 import React from 'react'
 import { SkillIconList } from './SkillIconList';
-import { cn } from '@/lib/utils';
 import SkillIcon from './SkillIcon';
-
 
 const SkillsSection = () => {
   return (
@@ -14,7 +11,6 @@ const SkillsSection = () => {
         <div className="grid grid-cols-6 gap-4 2">
             {SkillIconList.map((skill, index) => (
                 <div className="flex items-start justify-start" key={index}>
-                    {/* Turn into component */}
                     <SkillIcon color={skill.color} icon={skill.icon} />
                 </div>
             ))}
