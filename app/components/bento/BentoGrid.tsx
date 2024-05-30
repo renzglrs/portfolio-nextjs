@@ -22,18 +22,6 @@ const data = [
     title: 'PH',
     value: 'Mapbox',
   },
-  // {
-  //   title: 'Website Visits',
-  //   value: 1000000,
-  // },
-  // {
-  //   title: 'Customer Satisfaction',
-  //   value: 0.95,
-  // },
-  // {
-  //   title: 'Employee Count',
-  //   value: 120,
-  // },
 ];
 
 const BentoGrid = () => {
@@ -41,9 +29,7 @@ const BentoGrid = () => {
 
   return (
     <>
-        <section id="bento-grid">
-            {/* <h2 className="text-2xl font-medium pb-4">Bento Grid Test</h2> */}
-            
+        <section id="bento-grid">            
             {/* Bento Grid example layout 1 */}
             <ul className="animated-list grid grid-rows-2 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-10">
                 {/* {data.map((item, i) => (
