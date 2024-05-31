@@ -29,13 +29,15 @@ const MobileNav = () => {
             </SheetTrigger>
             <SheetContent>
                 <SheetHeader>
-                    <SheetTitle className="text-3xl">RG</SheetTitle>
+                    <SheetTitle className="text-3xl text-primary hover:opacity-50">
+                        <Link href={"/"}>RG</Link>
+                    </SheetTitle>
                     <SheetDescription>
                         <ul className="flex flex-col gap-4 pt-14">
                         {navLinks.map((link) => (
                             <li key={link.route} className="cursor-pointer">
                                 <Link href={link.route} legacyBehavior passHref>
-                                    <p className="text-lg text-gray-600 hover:text-gray-800">
+                                    <p className="text-lg text-primary hover:opacity-50">
                                         {link.label}
                                     </p>
                                 </Link>
