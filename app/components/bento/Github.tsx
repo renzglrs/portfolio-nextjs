@@ -8,9 +8,9 @@ const Github = () => {
     <Link href="https://github.com/renzglrs" target='_blank'>
       <CardTemplate
           className="row-span-1 md:col-span-1"
-          backgroundColor="bg-[#1d1d1d]"
+          backgroundColor="bg-secondary"
       >
-              <BsGithub className="text-7xl text-white"/>
+              <BsGithub className="text-7xl text-primary"/>
       </CardTemplate>
     </Link>
   )

@@ -70,8 +70,8 @@ const Navbar: React.FC = () => {
                                     {/* To fix: text color theme-- */}
                                     <NavigationMenuLink 
                                         className={ 
-                                            cn(`text-sm px-3 py-2 rounded border-none text-gray-800 hover:bg-gray-100 dark:text-white`, 
-                                            isActive ? 'bg-gray-100' : '')}
+                                            cn(`text-sm px-3 py-2 rounded border-none text-primary hover:bg-secondary`, 
+                                            isActive ? 'bg-secondary' : '')}
                                     >
                                         {link.label}
                                     </NavigationMenuLink>
