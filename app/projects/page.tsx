@@ -30,7 +30,10 @@ const ProjectsPage = () => {
                 <CardDescription>Card Description</CardDescription>
               </CardHeader>
               <CardContent className="flex flex-col gap-3">
-                <div className="flex gap-2">
+                <div className="flex flex-wrap gap-2">
+                  <Badge>Badge</Badge>
+                  <Badge>Badge</Badge>
+                  <Badge>Badge</Badge>
                   <Badge>Badge</Badge>
                   <Badge>Badge</Badge>
                   <Badge>Badge</Badge>
@@ -44,7 +47,7 @@ const ProjectsPage = () => {
               </CardFooter>
             </li>
 
-            <li className={`row-span-1 md:col-span-1 rounded-lg hover:bg-secondary`}>
+            {/* <li className={`row-span-1 md:col-span-1 rounded-lg hover:bg-secondary`}>
               <CardHeader>
                 <CardTitle>Project 2</CardTitle>
                 <CardDescription>Card Description</CardDescription>
@@ -53,7 +56,6 @@ const ProjectsPage = () => {
                 <Image src={img} alt='img' className="rounded-sm" />
               </CardContent>
               <CardFooter>
-                {/* <p>Card Footer</p> */}
               </CardFooter>
             </li>
             
@@ -64,12 +66,12 @@ const ProjectsPage = () => {
               </CardHeader>
               <CardContent>
                 <Image src={img} alt='img' className="rounded-sm" />
-                {/* <p>Card Content</p> */}
               </CardContent>
               <CardFooter>
-                {/* <p>Card Footer</p> */}
               </CardFooter>
-            </li>
+            </li> */}
+
+            
           </ul>
       </main>
     

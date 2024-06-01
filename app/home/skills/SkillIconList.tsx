@@ -6,94 +6,96 @@ import { SiMongodb, SiExpress, SiShadcnui, SiPostman, SiPhp, SiMysql } from "rea
 interface SkillIcon {
   label: string;
   href: string;
-  color?: string;
+  style?: string;
   icon?: React.ReactNode;
 }
 export const SkillIconList: SkillIcon[] = [
     {
         label: "HTML5",
         href: "/",
-        color: "hover:opacity-50",
+        style: "text-orange-600 ",
+        // style: "hover:opacity-50",
         icon: <FaHtml5 />
     },
     {
         label: "CSS3",
         href: "/",
-        color: "hover:opacity-50",
+        style: "text-blue-500 ",
+        // style: "hover:opacity-50",
         icon: <FaCss3 />
     },
     {
         label: "Javascript",
         href: "/",
-        color: "hover:opacity-50",
+        style: "text-yellow-300 ",
         icon: <IoLogoJavascript />
 
     },
     {
         label: "ReactJS",
         href: "/",
-        color: "hover:opacity-50",
+        style: "text-cyan-400 ",
         icon: <FaReact />
-    },
-    {
-        label: "NodeJS",
-        href: "/",
-        color: "hover:opacity-50",
-        icon: <FaNodeJs />
     },
     {
         label: "NextJS",
         href: "/",
-        color: "hover:opacity-50",
+        style: "",
         icon: <RiNextjsFill />
 
     },
     {
+        label: "NodeJS",
+        href: "/",
+        style: "text-green-400 ",
+        icon: <FaNodeJs />
+    },
+    {
         label: "ExpressJS",
         href: "/",
-        color: "hover:opacity-50",
+        style: "text-gray-400 ",
         icon: <SiExpress />
     },
     {
         label: "Tailwind",
         href: "/",
-        color: "hover:opacity-50",
+        style: "text-teal-400 ",
         icon: <RiTailwindCssFill />
     },
     {
         label: "Mongodb",
         href: "/",
-        color: "hover:opacity-50",
+        style: "text-green-600 ",
         icon: <SiMongodb />
     },
     {
         label: "Shadcnui",
         href: "/",
-        color: "hover:opacity-50",
+        style: "text-gray-200 ",
         icon: <SiShadcnui />
     },
     {
         label: "Postman",
         href: "/",
-        color: "hover:opacity-50",
+        style: "text-orange-400 ",
         icon: <SiPostman />
     },
     {
         label: "PHP",
         href: "/",
-        color: "hover:opacity-50",
+        style: "text-indigo-500 ",
         icon: <SiPhp />
     },
     {
         label: "MySQL",
         href: "/",
-        color: "hover:opacity-50",
+        style: "text-sky-800",
         icon: <SiMysql />
     },
     {
         label: "Laravel",
         href: "/",
-        color: "hover:opacity-50",
+        style: "text-red-600",
         icon: <FaLaravel />
     },
 ]

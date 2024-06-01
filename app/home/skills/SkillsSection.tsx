@@ -17,14 +17,14 @@ const SkillsSection = () => {
         <div className="grid grid-cols-6 gap-4 2">
             {SkillIconList.map((skill, index) => (
                 <div className="flex items-start justify-start" key={index}>
-                     <Tooltip>
-                        <TooltipTrigger>
-                          <SkillIcon color={skill.color} icon={skill.icon} />
-                        </TooltipTrigger>
-                        <TooltipContent>
-                          <p>{skill.label}</p>
-                        </TooltipContent>
-                      </Tooltip>
+                  <Tooltip>
+                    <TooltipTrigger>
+                      <SkillIcon style={skill.style} icon={skill.icon} />
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>{skill.label}</p>
+                    </TooltipContent>
+                  </Tooltip>
                 </div>
             ))}
         </div>
