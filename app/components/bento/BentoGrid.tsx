@@ -29,7 +29,7 @@ const BentoGrid = () => {
 
   return (
     <>
-        <section id="bento-grid">            
+        <section id="bento-grid" className="pt-10">            
             {/* Bento Grid example layout 1 */}
             <ul className="animated-list grid grid-rows-2 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {/* {data.map((item, i) => (
