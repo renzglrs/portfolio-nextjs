@@ -1,6 +1,12 @@
 import React from 'react'
 import { SkillIconList } from './SkillIconList';
 import SkillIcon from './SkillIcon';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/app/components/ui/tooltip"
+
 
 const SkillsSection = () => {
   return (
@@ -11,7 +17,14 @@ const SkillsSection = () => {
         <div className="grid grid-cols-6 gap-4 2">
             {SkillIconList.map((skill, index) => (
                 <div className="flex items-start justify-start" key={index}>
-                    <SkillIcon color={skill.color} icon={skill.icon} />
+                     <Tooltip>
+                        <TooltipTrigger>
+                          <SkillIcon color={skill.color} icon={skill.icon} />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>{skill.label}</p>
+                        </TooltipContent>
+                      </Tooltip>
                 </div>
             ))}
         </div>

@@ -5,6 +5,9 @@ import "./globals.css";
 import Navbar from "@/app/components/navigation/Navbar";
 import { ThemeProvider } from "@/app/components/theme-provider";
 
+import {
+  TooltipProvider,
+} from "@/app/components/ui/tooltip"
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -30,8 +33,10 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <Navbar />
+            <TooltipProvider>
+              <Navbar />
               {children}
+            </TooltipProvider>
           </ThemeProvider>
       </body>
     </html>
