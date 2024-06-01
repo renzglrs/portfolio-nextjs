@@ -31,7 +31,7 @@ const BentoGrid = () => {
     <>
         <section id="bento-grid">            
             {/* Bento Grid example layout 1 */}
-            <ul className="animated-list grid grid-rows-2 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-10">
+            <ul className="animated-list grid grid-rows-2 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {/* {data.map((item, i) => (
                   <div key={i} className={`${boxStyle} ${i === 0 || i === 3 ? 'md:col-span-2' : ''}`}>
                     <h2 className="text-xl text-gray-600">{item.title}</h2>
