@@ -9,22 +9,22 @@ interface ContactList {
 export const contactList: ContactList[] = [
     {
         label: "Github",
-        link: "#",
+        link: "https://github.com/renzglrs",
         imgUrl: <FaGithub />,
     },
     {
         label: "Linkedin",
-        link: "#",
+        link: "https://www.linkedin.com/in/renzcarloglorioso/",
         imgUrl: <FaLinkedin />,
     },
     {
         label: "Codepen",
-        link: "#",
+        link: "https://www.codepen.io/",
         imgUrl: <FaCodepen />,
     },
     {
         label: "Instagram",
-        link: "#",
+        link: "https://www.instagram.com/",
         imgUrl: <FaInstagram />,
     },
 ];

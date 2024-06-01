@@ -19,7 +19,7 @@ const ContactSection = () => {
         <h2 className="text-2xl font-medium pb-4">Connect</h2>
         <ul className="animated-list grid grid-cols-1 gap-5 sm:grid-cols-2">
             {contactList.map((contact, index) => (
-              <Link key={index} href={contact.link}>
+              <Link key={index} href={contact.link} target="_blank">
                 <li className="w-full flex items-center justify-between p-4 border-none rounded-lg bg-secondary">
                     <div className="flex gap-4 items-center text-primary">
                       <span className="text-3xl">{contact.imgUrl}</span>
