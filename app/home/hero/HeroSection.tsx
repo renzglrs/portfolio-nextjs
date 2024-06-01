@@ -13,8 +13,27 @@ const HeroSection = () => {
             />
         </div>
 
-        <div>
+
+
+        <div className="flex flex-col gap-5">
           <h1 className="text-3xl text-primary font-bold">Renz Glorioso</h1>
+
+          {/* Terminal CSS Animation */}
+          <div className="terminal-loader max-w-md">
+              <div className="terminal-header">
+                  <div className="terminal-controls">
+                      <div className="control close"></div>
+                      <div className="control minimize"></div>
+                      <div className="control maximize"></div>
+                  </div>
+                  <div className="terminal-title">Status</div>
+              </div>
+              <div className="content flex gap-2 pt-0 text-sm">
+                <span className="text-green-300">computer:~$</span><p className="text text-white">Greetings, my name is Renz!</p>
+              </div>
+          </div>
+
+          
           <p className="max-w-md text-muted-foreground text-base font-light">
             {headerDetails.description}
           </p>

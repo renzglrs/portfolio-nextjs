@@ -72,3 +72,95 @@
 }
 
 
+
+/* Terminal CSS Animation */
+@keyframes blinkCursor {
+	50% {
+		border-right-color: transparent;
+	}
+}
+
+@keyframes typeAndDelete {
+	0%,
+	10% {
+		width: 0;
+	}
+
+	45%,
+	55% {
+		width: 13.2em;
+	}
+
+	90%,
+	100% {
+		width: 0;
+	}
+}
+
+
+.terminal-loader {
+	width: 100%;
+	/* max-width: 500px; */
+	height: 70px;
+	background: #1c1c1c;
+	border: 1px solid #ffffff3e;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.terminal-header {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* background-color: #343434; */
+	background-color: #1c1c1c;
+	padding: 6px;
+}
+
+.terminal-controls{
+	position: absolute;
+	left: 10px;
+	display: flex;
+	gap: 7px;
+}
+
+.control {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: #777;
+}
+
+.control.close {
+	background-color: #e33;
+}
+
+.control.minimize {
+	background-color: #ee0;
+}
+
+.control.maximize {
+	background-color: #0b0;
+}
+
+.terminal-title {
+	/* color: #eeeeeec1; */
+	color: #1c1c1c;
+}
+
+.content{
+	padding: 0 10px;
+}
+.text {
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 2px solid white;
+	animation: typeAndDelete 4s steps(11) infinite,
+		blinkCursor 0.5s step-end infinite alternate;
+	/* color: rgb(0, 196, 0); */
+}
+
+
