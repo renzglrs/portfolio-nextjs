@@ -3,7 +3,7 @@ import SkillIcon from './SkillIcon';
 import { IoLogoJavascript } from "react-icons/io5";
 
 const meta: Meta<typeof SkillIcon> = {
-    title: "Skills Section/SkillIcon",
+    title: "Home/Section/Skills Section/SkillIcon",
     component: SkillIcon,
     parameters: {
         layout: "centered",
