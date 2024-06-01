@@ -10,7 +10,7 @@ const meta: Meta<typeof SkillIcon> = {
     },
     tags: ['autodocs'],
     argTypes: {
-        color: {
+        style: {
             control: { type: 'radio' },
             options: ['hover:opacity-50', 'hover:text-red-400', 'hover:text-blue-400']
         }
@@ -22,7 +22,7 @@ type Story = StoryObj<typeof SkillIcon>;
 
 export const Default: Story = {
   args: {
-    color: "hover:opacity-50",
+    style: "hover:opacity-50",
     icon: <IoLogoJavascript />,
   },
 };
@@ -31,7 +31,7 @@ export const States: Story = {
     render: () => (
         <>
             <SkillIcon icon={<IoLogoJavascript />} />
-            <SkillIcon color={"opacity-50"} icon={<IoLogoJavascript />} />
+            <SkillIcon style={"opacity-50"} icon={<IoLogoJavascript />} />
         </>
     )
 };
