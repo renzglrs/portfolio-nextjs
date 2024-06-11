@@ -5,14 +5,14 @@ import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@/app/components/ui/tooltip"
+} from "@/components/ui/tooltip"
 
 
 const SkillsSection = () => {
   return (
     <section id="section" className="pt-10">
 
-        <h2 className="text-2xl font-medium pb-4">Skills</h2>
+        <h2 className="text-2xl font-medium pb-4">Tech Stack</h2>
 
         <div className="grid grid-cols-6 gap-4 2">
             {SkillIconList.map((skill, index) => (

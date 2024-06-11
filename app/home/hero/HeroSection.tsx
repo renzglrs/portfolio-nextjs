@@ -32,7 +32,6 @@ const HeroSection = () => {
                 <span className="text-green-300">computer:~$</span><p className="text text-white">Greetings, my name is Renz!</p>
               </div>
           </div>
-
           
           <p className="max-w-md text-muted-foreground text-base font-light">
             {headerDetails.description}
