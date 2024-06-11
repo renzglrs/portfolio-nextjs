@@ -8,7 +8,7 @@ import {
 } from "@/app/components/ui/navigation-menu";
 import { Avatar, AvatarFallback, AvatarImage } from "@/app/components/ui/avatar";
 import { navLinks } from "@/constants";
-import { cn } from "@/lib/utils";
+import { cn } from "@/app/lib/utils";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import MobileNav from "./MobileNav";

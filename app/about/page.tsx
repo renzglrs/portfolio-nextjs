@@ -1,5 +1,5 @@
 import React from 'react'
-import BentoGrid from '../components/bento/BentoGrid';
+import BentoGrid from '@/app/components/bento/BentoGrid';
 
 const AboutPage = () => {
   return (

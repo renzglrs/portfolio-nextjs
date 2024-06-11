@@ -2,7 +2,7 @@
 import { ReactNode } from '../../../node_modules/@mdx-js/react/lib';
 import { IconType } from 'react-icons/lib';
 import type { Meta, StoryObj } from '@storybook/react';
-import { cn } from '@/lib/utils';
+import { cn } from '@/app/lib/utils';
 import { BsGithub } from "react-icons/bs";
 import CardTemplate from './CardTemplate';
 
