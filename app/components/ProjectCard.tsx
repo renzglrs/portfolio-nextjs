@@ -33,8 +33,8 @@ const ProjectCard: React.FC<{ project: Project }> = ({project}) => {
         </CardHeader>
         <CardContent className="flex flex-col gap-3">
             <div className="flex flex-wrap gap-2">
-                {project.technology.map((tech)=> (
-                    <Badge>{tech}</Badge>
+                {project.technology.map((tech, index)=> (
+                    <Badge key={index}>{tech}</Badge>
                 ))}
             </div>
             <Image 
