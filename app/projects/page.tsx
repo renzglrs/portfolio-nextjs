@@ -13,7 +13,7 @@ const ProjectsPage = () => {
 
           <ul className='animated-list grid auto-rows md:grid-cols-1 gap-4 mb-10'>
             {projectsData.map((project, index) => (
-              <li className='row-span-1 md:col-span-1 rounded-lg hover:bg-secondary'>
+              <li key={index} className='row-span-1 md:col-span-1 rounded-lg hover:bg-secondary'>
                 <ProjectCard key={index} project={project} />
               </li>
             ))}
