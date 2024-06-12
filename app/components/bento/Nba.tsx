@@ -1,5 +1,6 @@
 import CardTemplate from './CardTemplate'
 import { FaBasketballBall } from "react-icons/fa";
+import { MdSportsBasketball } from "react-icons/md";
 
 
 const Nba = () => {
@@ -8,7 +9,7 @@ const Nba = () => {
         className="row-span-1 md:col-span-1"
         backgroundColor="bg-secondary"
     >
-        <FaBasketballBall className="text-7xl text-primary"/>
+        <MdSportsBasketball className="text-7xl text-primary"/>
     </CardTemplate>
   )
 }
