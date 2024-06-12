@@ -8,8 +8,6 @@ import {
 } from "@/app/components/ui/card"
 import { Badge } from "@/app/components/ui/badge"
 import { FaGithub, FaLink } from "react-icons/fa";
-
-import img from "@/public/projects/footwork.png";
 import Image from "next/image";
 import Link from "next/link";
 
