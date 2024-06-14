@@ -51,7 +51,7 @@ const BlogPage = async () => {
 
       <h1 className="text-3xl font-bold">Blog <span className="text-xl">({user?.posts.length})</span></h1>
 
-      <ul className="md:w-[50%] flex flex-col gap-6 animated-list">
+      <ul className="w-full px-36 flex flex-col gap-6 animated-list">
         {user?.posts.map((post)=> {
           const formattedDate = formatDate(post.createdAt);
           
@@ -69,12 +69,6 @@ const BlogPage = async () => {
         })}
       </ul>
 
-      {/* convert to a component */}
-      {/* <form action={createPost} className="flex flex-col gap-y-2">
-        <input type="text" name="title" placeholder="Title" className="px-2 py-1 rounded-sm" />
-        <textarea name="content" rows={5} placeholder="Content" className="px-2 py-1 rounded-sm" />
-        <button type="submit" className="p-2 border rounded-lg bg-primary text-secondary">Create Post</button>
-      </form> */}
       <PostForm />
 
     </main>

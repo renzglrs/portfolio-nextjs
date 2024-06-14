@@ -64,6 +64,13 @@ const TodoForm = () => {
         description: errorMessage,
       });
       return;
+    } else {
+      // output success message
+      toast({
+        variant: "default",
+        title: "Success",
+        description: result.success,
+      });
     }
 
 
