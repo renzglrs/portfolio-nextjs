@@ -1,18 +1,74 @@
 "use server"
 
-import { revalidatePath } from "next/cache";
 import prisma from "./db"
-import { Prisma } from "@prisma/client";
+import { z } from "zod";
+import { revalidatePath } from "next/cache";
+import { TodoSchema } from "./types";
 
-export async function createPost(formData: FormData) {
+
+// Error handler
+export const getErrorMessage = (error: unknown): string => {
+    let message: string;
+
+    if(error instanceof Error) {
+        message = error.message;
+    } else if (error && typeof error === "object" && "message" in error) {
+        message = String(error.message);
+    } else if (typeof error === "string") {
+        message = error;
+    } else {
+        message = "Something went wrong";
+    }
+
+    return message;
+}
+
+// Create blog post function
+export async function createPost(newPost: unknown) {
+    // const PostSchema = z.object({
+    //     title: z.string().min(5, "Title must be at least 5 characters."),
+    //     content: z.string().min(5, "Content must be at least 5 characters.")
+    // })
+
+    // const parse = PostSchema.safeParse({
+    //     title: formData.get("title"),
+    //     content: formData.get("content")
+    // })
+
+    // if (!parse.success) {
+    //     console.log(parse.error.errors);
+    //     return { errors: parse.error.errors };
+    // }
+
+    // const data = parse.data;
+
+
+
+    // server-side validation
+    const result = TodoSchema.safeParse(newPost);
+
+    if (!result.success) {
+      let errorMessage = "";
+
+      result.error.issues.forEach((issue) => {
+        errorMessage = errorMessage + issue.path[0] + ': ' + issue.message + '. ';
+      });
+
+      return {
+        error: errorMessage,
+      };
+    }
+
+
+
     try {
         await prisma.post.create({
             data: {
-                title: formData.get("title") as string,
-                slug: (formData.get("title") as string)
+                title: result.data.title,
+                slug: result.data.title
                     .replace(/\s+/g, "-")
                     .toLowerCase(),
-                content: formData.get("content") as string,
+                content: result.data.content,
                 author: {
                     connect: {
                         email: "john@gmail.com",
@@ -22,16 +78,16 @@ export async function createPost(formData: FormData) {
         });
         
         revalidatePath("/blog");
-        return { message: "Success!", status: 200 }
-
-    } catch (error) {
-        if (error instanceof Prisma.PrismaClientKnownRequestError) {
-            if (error.code === "P2002") {
-                console.log("There is a unique constraint violation, a new user cannot be created with this email.")
-            }
+        return { 
+            message: `Successfully added post!`, 
+            status: 200 
         }
 
-        return { message: "Error", status: 400 }
+    } catch (error: unknown) {
+        return { 
+            error: getErrorMessage(error), 
+            status: 400 
+        }
     }
 }
 

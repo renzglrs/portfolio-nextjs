@@ -10,6 +10,7 @@ import { Badge } from "@/app/components/ui/badge"
 import { FaGithub, FaLink } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "./ui/button";
 
 
 type Project = {
@@ -26,15 +27,15 @@ type Project = {
 
 const ProjectCard: React.FC<{ project: Project }> = ({project}) => {
   return (
-    <>
-        <CardHeader className=''>
+    <Card className="border-0 shadow-none hover:bg-secondary">
+        <CardHeader>
             <CardTitle>{project.title}</CardTitle>
             <CardDescription>Card Description</CardDescription>
         </CardHeader>
-        <CardContent className="flex flex-col gap-3">
+        <CardContent className="flex flex-col gap-3 hover:bg-secondary">
             <div className="flex flex-wrap gap-2">
                 {project.technology.map((tech, index)=> (
-                    <Badge key={index}>{tech}</Badge>
+                    <Badge key={index} variant="outline">{tech}</Badge>
                 ))}
             </div>
             <Image 
@@ -51,10 +52,16 @@ const ProjectCard: React.FC<{ project: Project }> = ({project}) => {
             />
         </CardContent>
         <CardFooter className="flex gap-3 text-2xl">
-            <Link href={project.links.github} target="_blank"><FaGithub /></Link>
-            <Link href={project.links.live} target="_blank"><FaLink /></Link>
+            <Link href={project.links.github} target="_blank">
+                {/* <FaGithub /> */}
+                <Button variant="default">Github</Button>
+            </Link>
+            <Link href={project.links.live} target="_blank">
+                {/* <FaLink /> */}
+                <Button variant="default">Link</Button>
+            </Link>
         </CardFooter>
-    </>
+    </Card>
   )
 }
 

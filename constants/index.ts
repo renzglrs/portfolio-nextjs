@@ -21,9 +21,9 @@ export const projectsData =[
         
         description:"",
         imageUrl: "/projects/footwork.png",
-        technology: ["React", "Vite", "MongoDB"],
+        technology: ["React", "Express JS", "MongoDB", "Node JS"],
         links:{
-            live: "http://zuitt-bootcamp-prod-362-6569-glorioso.s3-website.us-east-1.amazonaws.com/",
+            live: "https://footwork-ecommerce-store.vercel.app/",
             github: "https://github.com/renzglrs/footwork-ecommerce-store",
         }
 
@@ -33,7 +33,7 @@ export const projectsData =[
         title: "Portfolio Website",
         description:"",
         imageUrl: "/projects/portfolio.png",
-        technology: ["React"],
+        technology: ["Next.js", "React", "Prisma", "shadcn/ui"],
         links:{
             live: "https://renzglrs.vercel.app",
             github: "https://github.com/renzglrs/portfolio-react",
