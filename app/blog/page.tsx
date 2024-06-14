@@ -51,7 +51,7 @@ const BlogPage = async () => {
 
       <h1 className="text-3xl font-bold">Blog <span className="text-xl">({user?.posts.length})</span></h1>
 
-      <ul className="w-full px-36 flex flex-col gap-6 animated-list">
+      <ul className="w-full sm:px-36 flex flex-col gap-6 animated-list">
         {user?.posts.map((post)=> {
           const formattedDate = formatDate(post.createdAt);
           
